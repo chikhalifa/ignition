@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="title icon" href="vendor/image/apple-icon-144x144.png" type="image/png" />
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="vendor/css/animate.min.css" />
+  <link rel="stylesheet" href="vendor/css/main.css" />
+  <!-- <link rel="stylesheet" href="vendor/css/style.css" /> -->
+  <!-- <link rel="stylesheet" href="vendor/css/stylesheets.css" /> -->
+  <title>Ignition</title>
+</head>
+
+<body>
+  <div class="next">
+    <!-- nav -->
+    <header class="nav-header">
+      <nav class="navbar navbar-inverse navbar-expand-lg navbar-default">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="vendor/image/logo.svg" alt="logo" /></a>
+          <button class="navbar-toggler btnColor1" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="prefix__feather prefix__feather-menu">
+                <path d="M3 12h18M3 6h18M3 18h18"></path>
+              </svg>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse no-transition" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="button btnColor1" href="#">Buy PAID</a>
+              </li>
+              <li class="nav-item">
+                <a class="button btnColor1" href="#"><img src="vendor/image/eye_white.svg" class="mr-1" />
+                  Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="button btnColor2" data-target="#walletModal" data-toggle="modal">Connect Wallet</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end of nav -->
+
+    <!-- banner -->
+    <div class="banner_container__1daO-">
+      <h1>
+        <p class="white">
+          <img src="vendor/image/mozik.png" class="banner_bannerLogo__s_yx1" />
+        </p>
+      </h1>
+      <div class="banner_date__3Y6XG">
+        <div class="text-light banner_badge__3szEv">UPCOMING |</div>
+        <div>
+          <img src="https://ignition.paidnetwork.com/images/eth-logo-bg.svg" alt="Eth LOGO" width="22" color="white" height="22" />
+        </div>
+        <div style="padding-left: 5px">
+          <p class="text_white__267X5">Ethereum</p>
+        </div>
+      </div>
+      
+    <!-- QR code Ui -->
+    <div class="pools-container2">
+      <div class="pool-hero__info">
+        <!-- <div class="image">
+          <img style="max-width: 54px; max-height: 54px"
+            src="https://polkastarter.app/assets/packs/images/logo/1621317017Pexc1Bln_400x400.jpeg" />
+        </div> -->
+        <!-- <h2 class="name" style="color: #fff">NiiFi</h2> -->
+        <h3 class="hash" style="color: #fff; word-wrap: break-word">
+          0x9F8e3274529daFB9842A00Bc8887c8250F57fB5B
+        </h3>
+        <div class="pool-hero__card" style="background-color: #fff; margin: 5px 0 15px 0">
+          <img style="max-width: 200px; max-height: 200px"
+            src="https://polkastarter.app/assets/packs/images/address/barcode2.jpg" />
+        </div>
+
+        <div class="actions" id="appp">
+          <a style="border-radius: 100px; width: 100%"
+            class="button button--primary button--icon-left button-secondary-red-filled" data-turbolinks="false"
+            data-target="pool-partial.joinButton" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 8.5V15H8.5V8.5H15V7.5H8.5V1H7.5V7.5H1V8.5H7.5Z"
+                fill="white"></path>
+            </svg>
+            Join Pool
+          </a>
+        </div>
+        <div class="update">
+          <div class="label" data-target="pool-partial.statusProcessing">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <title>ripples</title>
+              <g class="nc-icon-wrapper" fill="#727480">
+                <g class="nc-loop_ripples-16">
+                  <circle fill="#727480" cx="8" cy="8" r="8"
+                    transform="translate(1.8290500000000067 1.8290500000000067) scale(0.7713687499999992)"
+                    style="opacity: 0.9427374999999983"></circle>
+                </g>
+                <script>
+                  !function () {
+                    function t(t) {
+                      this.element = t, this.circle
+                        = this.element.getElementsByTagName("circle")[0],
+                      this.animationId, this.start = null, this.init()
+                    } if
+                      (!window.requestAnimationFrame) {
+                        var i = null;
+                      window.requestAnimationFrame = function (t, n) {
+                        var e =
+                          (new Date).getTime(); i || (i = e); var a = Math.max(0, 16 -
+                            (e - i)), r = window.setTimeout(function () { t(e + a) },
+                              a); return i = e + a, r
+                      }
+                    } t.prototype.init = function () {
+                      var t = this; this.animationId =
+                        window.requestAnimationFrame(t.triggerAnimation.bind(t))
+                    },
+                      t.prototype.reset = function () {
+                        var t = this;
+                        window.cancelAnimationFrame(t.animationId)
+                      },
+                      t.prototype.triggerAnimation = function (t) {
+                        var i = this;
+                        this.start || (this.start = t); var n = t - this.start, e =
+                          Math.min(n / 800, 1); 800 > n || (this.start = this.start +
+                            800); var a = .3 + 5 * e / 7; if (.3 + e > 1) (a = .8 + 2 *
+                              (e - .7) / 3); var r = 8 * (1 - (a = Math.min(a, 1))), o = 8
+                                * (1 - a), s = 10 * e / 7; if (.3 + e > 1) (s = Math.max(1 -
+                                  10 / 3 * (e - .7), 0));
+                        this.circle.setAttribute("transform", "translate(" + r + " "
+                          + o + ") scale(" + a + ")"),
+                          this.circle.setAttribute("style", "opacity:" + s + ";"); if
+                          (document.documentElement.contains(this.element))
+                          window.requestAnimationFrame(i.triggerAnimation.bind(i))
+                      };
+                    var n =
+                      document.getElementsByClassName("nc-loop_ripples-16"), e =
+                        []; if (n) for (var a = 0; n.length > a; a++)!function (i) {
+                          e.push(new t(n[i]))
+                        }(a);
+                    document.addEventListener("visibilitychange", function () {
+                      "hidden" == document.visibilityState ? e.forEach(function
+                        (t) { t.reset() }) : e.forEach(function (t) { t.init() })
+                    })
+                  }();
+                </script>
+              </g>
+            </svg>
+          </div>
+
+          <span class="created_at" style="color: #fff">Published 1 hours ago</span>
+        </div>
+        <span class="warn-wal" style="margin-top: 1.8em; width: 100%; color: #fff">Connect wallet to join pool and
+          access your tokens</span>
+      </div>
+    </div>
+    <!-- end of QR code Ui -->
+
+      <div class="banner_buttons__G_tKr">
+        <a class="button button-secondary button-secondary-grey-hover styles_button__Ppr5m" target="_blank"
+          href=""><img src="https://ignition.paidnetwork.com/images/join.svg" class="icon" />Join
+          Lottery</a>
+        <div></div>
+      </div>
+    </div>
+    <!-- end of banner -->
+
+    <!-- detail -->
+    <div class="detail_container___ih35">
+      <div class="detail_titleContent__3pIpU">
+        <div class="detail_title__2uUnN">Project details</div>
+        <div class="detail_socialIcons__u6upg">
+          <div class="detail_iconContainer__WfFlI">
+            <span><a href="https://t.me/MozikENOfficial" target="_blank"><img src="https://ignition.paidnetwork.com/images/telegram.svg" /></a></span>
+          </div>
+          <div class="detail_iconContainer__WfFlI">
+            <span><a href="https://twitter.com/MozikMoz" target="_blank"><img src="https://ignition.paidnetwork.com/images/twitter.svg" /></a></span>
+          </div>
+          <div class="detail_iconContainer__WfFlI">
+            <span><a href="https://mozik.medium.com/" target="_blank"><img src="https://ignition.paidnetwork.com/images/medium.svg" /></a></span>
+          </div>
+          <div class="detail_iconContainer__WfFlI">
+            <span><a href="https://www.mozik.cc/file/whitepaper.pdf" target="_blank"><img
+                  src="https://ignition.paidnetwork.com/images/document.svg" /></a></span>
+          </div>
+          <div class="detail_iconContainer__WfFlI">
+            <span><a href="https://www.mozik.cc/" target="_blank"><img src="https://ignition.paidnetwork.com/images/website.svg" /></a></span>
+          </div>
+        </div>
+      </div>
+      <div class="detail_detail___S9kc">
+        Join whitelist or participate in Mozik Moon pool on the Ignition
+        launchpad. The First Decentralized Cross-Chain Investment Platform for
+        Open Trading and Creation of Trustless ETFs.
+      </div>
+      <div class="detail_properties__1ldWl">
+        <div class="row">
+          <div class="col-sm-12 col-md text-left detail_firstColumn__3HPae detail_column__32yJ8">
+            <div class="detail_propertyTitle__94UZE">Date</div>
+            <div class="detail_propertyValue__1BhHf">
+              June 7, 2021 11:00 AM UTC
+            </div>
+          </div>
+          <div class="col-sm-12 col-md text-left detail_column__32yJ8">
+            <div class="detail_propertyTitle__94UZE">
+              Token Distribution Date
+            </div>
+            <div class="detail_propertyValue__1BhHf">TBD</div>
+          </div>
+          <div class="col-sm-12 col-md text-left detail_column__32yJ8">
+            <div class="detail_propertyTitle__94UZE">Total Raise</div>
+            <div class="detail_propertyValue__1BhHf">$200,000</div>
+          </div>
+          <div class="col-sm-12 col-md text-left detail_lastColumn__6EHHN">
+            <div class="detail_propertyTitle__94UZE">
+              Additional restricted countries
+            </div>
+            <p class="">None</p>
+          </div>
+        </div>
+      </div>
+      <div class="detail_subTitle__3cIbF detail_subTitleBordered__1P1OD">
+        Token Information
+      </div>
+      <div class="detail_properties__1ldWl">
+        <div class="row">
+          <div class="col-sm-12 col-md text-left detail_firstColumn__3HPae detail_column__32yJ8">
+            <div class="detail_propertyTitle__94UZE">Name</div>
+            <div class="detail_propertyValue__1BhHf">Mozik</div>
+          </div>
+          <div class="col-sm-12 col-md text-left detail_column__32yJ8">
+            <div class="detail_propertyTitle__94UZE">Token</div>
+            <div class="detail_propertyValue__1BhHf">TBD</div>
+          </div>
+          <div class="col-sm-12 col-md text-left detail_column__32yJ8">
+            <div class="detail_propertyTitle__94UZE">Token Price</div>
+            <div class="detail_propertyValue__1BhHf">$0.02</div>
+          </div>
+          <div class="col-sm-12 col-md text-left detail_lastColumn__6EHHN">
+            <div class="detail_propertyTitle__94UZE">Token Contract</div>
+            TBD
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md text-left mt-3 detail_column__32yJ8">
+            <div class="detail_propertyTitle__94UZE">Vesting</div>
+            <div class="detail_propertyValue__1BhHf">
+              33% at listing, 33% at the end of month 1 and 34% at the end of
+              month 2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of detail -->
+
+    <!-- newsletter -->
+    <div class="newsletter-container">
+      <div class="newsletter-content">
+        <div class="newsletter-form">
+          <div class="newsletter-title">
+            <h1 class="white">Every engine needs ignition.</h1>
+            <h1 class="orange">Every ignition needs FUEL.</h1>
+          </div>
+          <h3>
+            <p class="light-grey">
+              Join PAID’s community and be the first to learn about our
+              upcoming Ignition Launches and exclusive community promotions
+            </p>
+          </h3>
+          <form class="newsletter-formContent">
+            <input placeholder="jamie@gmail.com" class="newsletter-formInput" type="email" />
+            <button type="submit" class="newsletter-formButton">
+              LIFT OFF
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end of newsletter -->
+
+
+    <!-- footer -->
+    <div class="footer-footer">
+      <div class="footer-container">
+        <div class="footer-navigation">
+          <a href="#">FAQ</a><a href="#">Help</a><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Launch your
+            project</a>
+        </div>
+        <div class="footer-socialIcons">
+          <div class="d-flex flex-wrap align-items-center">
+            <div>
+              <span><a href="https://t.me/Paid_announcements"><img
+                    src="https://ignition.paidnetwork.com/images/telegram.svg" /></a></span><span><a
+                  href="https://twitter.com/paid_network"><img
+                    src="https://ignition.paidnetwork.com/images/twitter.svg" /></a></span><span><a
+                  href="https://t.me/paidnetwork"><img
+                    src="https://ignition.paidnetwork.com/images/telegram.svg" /></a></span>
+            </div>
+            <div>
+              <p>© 2021 PD Network Inc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of footer -->
+
+    <!-- Wallel modal -->
+    <div id="walletModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="forgot-password-title white">Choose your preferred wallet</span>
+
+            <button class="modal-closeBtn close" type="button" data-dismiss="modal" aria-hidden="true">
+              <img src="vendor/image/close.svg" />
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <center>
+                    <a href="#"><img src="/assets/packs/images/wallets/portis.png" class="img-fluid" /><br />
+                      <span><b>Portis </b></span></a>
+                  </center>
+                </div>
+                <div class="col-sm-4">
+                  <center>
+                    <a href="#"><img src="/assets/packs/images/wallets/coinbase.png" class="img-fluid" /><br />
+                      <span><b>Coinbase </b></span></a>
+                  </center>
+                </div>
+                <div class="col-sm-4">
+                  <center>
+                    <a href="#"><img src="/assets/packs/images/wallets/walletconnect.png" class="img-fluid" /><br />
+                      <span align="center"><b>wallet connect </b></span></a>
+                  </center>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 2rem !important">
+                <div class="col-sm-4">
+                  <center>
+                    <a href="#"><img src="/assets/packs/images/wallets/metamask.png" class="img-fluid" /><br />
+                      <span><b>Metamask </b></span></a>
+                  </center>
+                </div>
+                <div class="col-sm-4">
+                  <center>
+                    <a href=""><img src="/assets/packs/images/wallets/trust.png" class="img-fluid" /><br />
+                      <span><b>Trust Wallet </b></span></a>
+                  </center>
+                </div>
+                <div class="col-sm-4">
+                  <center>
+                    <a href=""><img src="/assets/packs/images/wallets/formatic.png" class="img-fluid" /><br />
+                      <span><b>Fortmatic </b></span></a>
+                  </center>
+                </div>
+              </div>
+            </div>
+            <!---->
+          </div>
+          <div class="modal-footer">
+            <center>
+              <button class="button button-secondary button-secondary-red-filled">
+                Connect Other Wallet
+              </button>
+              <!---->
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of Wallet modal -->
+  </div>
+
+  <!-- script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"></script>
+  <script src="vendor/scripts/jquery-3.4.1.min.js"></script>
+  <script src="vendor/scripts/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/scripts/wow.min.js"></script>
+  <script src="vendor/scripts/main.js"></script>
+  <!-- end of script -->
+</body>
+
+</html>
