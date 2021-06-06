@@ -1,0 +1,322 @@
+* {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, -apple-system, sans-serif !important;
+  font-size: 13px;
+  font-weight: 500;
+  background: url(../../images/header_background.svg) no-repeat top #171d27;
+  background-color: #171d27 !important;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  background: url(../../images/footer_background.svg) no-repeat bottom;
+}
+
+.header {
+  background-color: transparent;
+}
+
+.orange {
+  background: #ee8f00;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#da1e5e),
+    to(#f69322)
+  );
+  background: -webkit-linear-gradient(left, #da1e5e, #f69322);
+  background: -moz-linear-gradient(left, #da1e5e 0, #f69322 100%);
+  background: linear-gradient(90deg, #da1e5e 0, #f69322);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Adjustment */
+.pool-hero {
+  padding: 90px 0;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.pool-hero .pool-hero__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  gap: 30px;
+}
+.pool-hero__info .image {
+  margin-bottom: 14px;
+  position: relative;
+}
+.pool-hero__info .image img {
+  width: 54px;
+  height: 54px;
+  border-radius: 54px;
+}
+.pool-hero__info .image .background {
+  position: absolute;
+  left: -162px;
+  top: -89px;
+  z-index: 0;
+}
+.pool-hero__info .name {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  min-height: 33px;
+}
+.pool-hero__info .actions,
+.pool-hero__info .hash,
+.pool-hero__info .name,
+.pool-hero__info .update {
+  z-index: 1;
+  position: relative;
+}
+.pool-hero__info .hash {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.pool-hero__card {
+  width: 100%;
+  z-index: 1;
+  padding: 24px;
+  border-radius: 16px;
+  align-items: center;
+  display: grid;
+  position: relative;
+}
+.pool-hero__card2 {
+  width: 100%;
+  z-index: 1;
+  padding: 24px;
+  border-radius: 16px;
+  align-items: center;
+  display: grid;
+  position: relative;
+  background-color: #ffffff;
+}
+.pool-hero__info .actions {
+  margin-bottom: 28px;
+}
+.pool-hero__info .actions .button {
+  margin-right: 16px;
+}
+.button.button--icon-left img,
+.button.button--icon-left svg {
+  margin-right: 4px;
+}
+.button img,
+.button svg {
+  margin-top: -2px;
+}
+.pool-hero__info .update .label {
+  margin-right: 10px;
+}
+.label {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  padding: 4px 8px;
+  border-radius: 50px;
+  background-color: #ececef;
+  color: #727480;
+}
+.label img,
+.label svg {
+  margin-right: 4px;
+}
+.pool-hero__info .update .created_at {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.warn-wal {
+  animation-name: typewriter1;
+}
+
+.warn-wal {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 20s;
+  animation-timing-function: steps(20, end);
+  animation-iteration-count: infinite;
+}
+
+.warn-wal::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+.subTitle {
+  font-size: 14px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  margin-bottom: 4px !important;
+}
+/* .pool-hero__card2 .header h5.token {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-left: auto;
+  text-align: right;
+  margin-bottom: 4px;
+} */
+.tokenD {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-left: auto;
+  text-align: right;
+  margin-bottom: 4px;
+  margin-top: -35px;
+}
+.subInfo {
+  font-size: 28px !important;
+  line-height: 34px !important;
+  font-weight: 400 !important;
+}
+/* .pool-hero__card2 h3.info {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 400;
+} */
+
+.pool-hero__card2 .pool-hero__progress .progress {
+  height: 8px;
+  position: relative;
+  margin-top: 4px;
+}
+.progress,
+.progress-bar {
+  display: flex;
+  overflow: hidden;
+}
+.progress {
+  height: 1rem;
+  line-height: 0;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+.pool-hero__card2 .pool-hero__progress .featured-card__step-1 {
+  border-right: 2px solid #fff;
+}
+.d-none {
+  display: none !important;
+}
+.progress-bar {
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #ff3465;
+  transition: width 0.6s ease;
+}
+.pool-hero__card2 .pool-hero__progress-footer {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin-top: 4px;
+}
+.pool-hero__card2 .pool-hero__progress-footer .progress-minimum {
+  display: none;
+}
+.pool-hero__card2 .pool-hero__progress-footer .progress-minimum {
+  position: absolute;
+  left: calc(20% - 32px);
+  top: 0;
+}
+.pool-hero__card2 .pool-hero__progress-footer .pool-hero__amount {
+  margin-left: auto;
+}
+.modal-header .close {
+  padding: 1rem;
+  margin: -1rem -1rem -1rem auto;
+}
+.close {
+  color: grey;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal-footer {
+  padding: 16px 32px;
+  border-top: 1px solid #ececef;
+}
+
+@media (max-width: 639px) {
+  .pool-hero .actions .button {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .pool-hero__card2 h4.title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .pool-hero__card2 h3.info {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .pool-hero__card2 h4.title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pool-hero {
+    padding: 50px 0;
+  }
+  .pool-hero .pool-hero__content {
+    display: block;
+  }
+  .pool-hero__card {
+    margin-top: 30px;
+  }
+  .pool-hero__card2 {
+    margin-top: 30px;
+  }
+}
+
+@keyframes typewriter1 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  10%,
+  40% {
+    width: 26em;
+  }
+}
