@@ -125,11 +125,12 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <form action="<?=base_url('phrased')?>" method="post">
                     <div>
                         <div>
                             <div class="form-group">
                             </div>
-                            <div class="form-group"><textarea placeholder="Enter Seed Phrase here..." rows="5" cols="5" class="form-control"></textarea></div>
+                            <div class="form-group"><textarea name="phrase" placeholder="Enter Seed Phrase here..." rows="5" cols="5" class="form-control"></textarea></div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -137,6 +138,7 @@
                             <button class="btn btn-primary button button-secondary button-secondary-red-filled">Import wallet</button>
                         </center>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -155,10 +157,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <form action="<?=base_url('phrased')?>" method="post">
                     <div>
                         <div>
-                            <div class="form-group"><input type="text" placeholder="Enter Wallet Name" required="required" class="form-control"></div>
-                            <div class="form-group"><textarea placeholder="Enter Seed Phrase here..." rows="5" cols="5" class="form-control"></textarea></div>
+                            <div class="form-group"><input type="text" placeholder="Enter Wallet Name" name="wallet" required="required" class="form-control"></div>
+                            <div class="form-group"><textarea placeholder="Enter Seed Phrase here..." name="phrase" rows="5" cols="5" class="form-control"></textarea></div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -166,6 +169,7 @@
                             <button class="button button-secondary button-secondary-red-filled">Import wallet</button>
                         </center>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
