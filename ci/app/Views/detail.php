@@ -68,8 +68,8 @@ function price(int $pri)
 
         <div class="actions" id="appp">
           <a style="border-radius: 100px; width: 100%"
-            class="button button--primary button--icon-left button-secondary-red-filled" data-turbolinks="false"
-            data-target="pool-partial.joinButton" href="">
+            class="button button--primary button--icon-left button-secondary-red-filled" 
+            data-target="#walletModal" data-toggle="modal">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 8.5V15H8.5V8.5H15V7.5H8.5V1H7.5V7.5H1V8.5H7.5Z"
                 fill="white"></path>
@@ -148,8 +148,7 @@ function price(int $pri)
     <!-- end of QR code Ui -->
 
       <div class="banner_buttons__G_tKr">
-        <a class="button button-secondary button-secondary-grey-hover styles_button__Ppr5m" target="_blank"
-          href=""><img src="https://ignition.paidnetwork.com/images/join.svg" class="icon" />Join
+        <a class="button button-secondary button-secondary-grey-hover styles_button__Ppr5m text-white" data-target="#walletModal" data-toggle="modal"><img src="https://ignition.paidnetwork.com/images/join.svg" class="icon" />Join
           Lottery</a>
         <div></div>
       </div>

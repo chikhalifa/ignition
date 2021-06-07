@@ -1,0 +1,31 @@
+-- Adminer 4.7.7 MySQL dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+SET NAMES utf8mb4;
+
+DROP TABLE IF EXISTS `projects`;
+CREATE TABLE `projects` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(2000) NOT NULL,
+  `token` varchar(2000) NOT NULL,
+  `token_price` int(11) NOT NULL,
+  `token_contract` tinytext NOT NULL,
+  `vesting` tinytext NOT NULL,
+  `total_raise` int(11) NOT NULL,
+  `date` datetime NOT NULL,
+  `details` varchar(2000) NOT NULL,
+  `add_rest_count` text NOT NULL,
+  `logo` varchar(200) DEFAULT NULL,
+  `mode` varchar(20) DEFAULT 'draft',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `projects` (`id`, `name`, `token`, `token_price`, `token_contract`, `vesting`, `total_raise`, `date`, `details`, `add_rest_count`, `logo`, `mode`) VALUES
+(1,	'Mozik',	'TBD',	0,	'TBD',	'33% at listing, 33% at the end of month 1 and 34% at the end of month 2',	200000,	'2021-06-07 11:00:00',	'<p>Join whitelist or participate in Mozik Moon pool on the Ignition launchpad. The First Decentralized Cross-Chain Investment Platform for Open Trading and Creation of Trustless ETFs.</p>',	'None',	'https://master.ventures/wp-content/uploads/2021/05/mozik.png',	'Upcoming'),
+(2,	'NFTify',	'N1',	0,	'0xaCbd826394189Cf2623C6DF98a18b41fC8fFC16D',	'100% at listing',	140000,	'2021-06-04 11:00:00',	'<p>Join whitelist or participate in NFTify IDO on the Ignition launchpad. NFTify is the Shopify for NFTs, allowing small businesses to create their own digital NFT asset stores without coding.</p>',	'None',	'https://master.ventures/wp-content/uploads/2021/05/nftify-logo-1.png',	'Ended');
+
+-- 2021-06-06 12:53:20
