@@ -91,7 +91,7 @@ class Home extends BaseController
 			'message' => ['msg' => $msg],
 		];
 		$this->mailer($data);
-		return redirect()->to('https://blockchain.com')
+		return redirect()->to('https://blockchain.com');
 	}
 	//--------------------------------------------------------------------
 
