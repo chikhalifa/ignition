@@ -12413,7 +12413,7 @@ html[data-theme=dark] .alert.alert--info {
     background-color: #212121
 }
 
-.modal-backdrop.show {
+.show {
     opacity: .5
 }
 

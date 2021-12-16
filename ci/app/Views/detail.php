@@ -636,9 +636,9 @@ function price(int $pri)
                                     <p class="column_title">Value per ticket</p>
                                     <p class="column_desc">TBD</p>
                                 </div>
-
+                                <!-- class="nav-link" data-bs-target="#loginModalToggle" data-bs-toggle="modal" -->
                                 <div class="cta">
-                                    <button type="button" role="button" class="css-6f2vl2">Join pool</button>
+                                    <button type="button" role="button" class="css-6f2vl2 "data-bs-target="#walletModal" data-bs-toggle="modal">Join pool</button>
                                 </div>
                             </div>
                         </div>
