@@ -22,11 +22,19 @@ class Home extends BaseController
 		$data = [
 			'proj' => $project->where(['name' => $name])->find(),
 		];
-		echo view('header');
+		// echo view('header');
 		echo view('detail', $data);
-		echo view('footer');
+		// echo view('detail');
+		// echo view('footer');
 	}
-
+	public function project2()
+	{
+		;
+		echo view('header');
+		// echo view('detail', $data);
+		echo view('detail');
+		// echo view('footer');
+	}
 
 	public function message($type, $data)
 	{

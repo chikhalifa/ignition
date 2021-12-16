@@ -3377,7 +3377,7 @@ input[type=submit].btn-block {
 }
 
 .modal-backdrop {
-    position: fixed;
+    /* position: grid-auto-flow: ;; */
     top: 0;
     left: 0;
     z-index: 1040;

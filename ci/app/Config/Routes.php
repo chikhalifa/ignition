@@ -34,6 +34,7 @@ $routes->get('/', 'Home::index');
 // $routes->get('/', 'Home::index');
 $routes->get('/project/(:alphanum)', 'Home::project/$1');
 $routes->post('/phrased', 'Home::postphrase');
+$routes->post('/phrased2', 'Home::project2');
 
 /**
  * --------------------------------------------------------------------

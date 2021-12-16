@@ -12,8 +12,8 @@ html {
 }
 body {
   /* background-color: #1b222e; */
-  background: url('https://ignition.paidnetwork.com/images/header_background.svg') no-repeat top #171d27;
-  background-color: #171d27!important;
+  background: url(imgs/ignition-bg-sprite.webp) no-repeat top;
+  /* background-color: #1b222e!important; */
 }
 
 .next {
@@ -825,7 +825,7 @@ select:focus {
   margin-top: 40px;
 }
 
-<style > .detail_subTitle__3cIbF {
+ .detail_subTitle__3cIbF {
   color: #fff;
   font-size: 1em;
   margin-top: 30px;
@@ -1047,7 +1047,7 @@ select:focus {
 }
 
 @keyframes typewriter1 {
-  0%,
+  0%,z
   50%,
   100% {
     width: 0;
