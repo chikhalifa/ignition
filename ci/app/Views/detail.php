@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-
+    
     <!-- font awesome -->
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
 
@@ -146,6 +146,156 @@ function price(int $pri)
 
                     <p data-bs-target="#forgotPasswordModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Forgot password</p>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="walletModal" aria-hidden="true" aria-labelledby="loginModalToggleLabel"
+        tabindex="">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalToggleLabel">Choose your preferred wallet</h5>
+                    <span class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" class="close-icon" height="1em"
+                            width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="modal-body">
+                <div class="row">
+                            <div class="col-sm-4">
+                                <center>
+                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal"><img src="https://apkplz.net/storage/images/com/portis/wallet/com.portis.wallet_1.png" class="img-fluid" /><br />
+                                        <span><b>Portis </b></span></a>
+                                </center>
+                            </div>
+                            <div class="col-sm-4">
+                                <center>
+                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKurCCptwAEizP9FR5xiP1OalsldmyCiES-UY-kCfBfrBDL9NmIbOLDBzHIpk5HPrmj4&usqp=CAU" class="img-fluid" /><br />
+                                        <span><b>Coinbase </b></span></a>
+                                </center>
+                            </div>
+                            <div class="col-sm-4">
+                                <center>
+                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://avatars.githubusercontent.com/u/37784886?s=280&v=4" class="img-fluid" /><br />
+                                        <span align="center"><b>wallet connect </b></span></a>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 2rem !important">
+                            <div class="col-sm-4">
+                                <center>
+                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/1200px-MetaMask_Fox.svg.png" class="img-fluid" /><br />
+                                        <span><b>Metamask </b></span></a>
+                                </center>
+                            </div>
+                            <div class="col-sm-4">
+                                <center>
+                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://trustwallet.com/assets/images/media/assets/trust_platform.svg" class="img-fluid" /><br />
+                                        <span><b>Trust Wallet </b></span></a>
+                                </center>
+                            </div>
+                            <div class="col-sm-4">
+                                <center>
+                                    <a href="#!"  data-toggle="modal" data-dismiss="modal" ><img src="https://styles.redditmedia.com/t5_28ax6x/styles/communityIcon_y97j6m1ceay31.png" class="img-fluid" /><br />
+                                        <span><b>Fortmatic </b></span></a>
+                                </center>
+                            </div>
+                        </div>
+                </div><br><br>
+                <div class="form px-0 px-md-3">
+                <div class="d-flex justify-content-center">
+                    <center>
+                    <button data-target="#oWalletModal" data-toggle="modal" data-dismiss="modal" class="btn button button button-secondary button-secondary-red-filled btnimport">
+                        <!-- <button data-target="#oWalletModal" data-toggle="modal" data-dismiss="modal"  class="btn button button button-secondary button-secondary-red-filled"> -->
+                            Connect Other Wallet
+                        </button>
+                        <!---->
+                    </center></div></div>
+               
+            </div>
+        </div>
+    </div>
+     <!-- modal -->
+   
+    <!-- wallet modal -->
+    <div class="modal fade" id="phraseModal" aria-hidden="true" aria-labelledby=""
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalToggleLabel"><span class="white h5 text-center">Enter your 12 - 24 words seed phrase/Private Key to connect and restore your wallet.</span></h5>
+                    <span class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" class="close-icon" height="1em"
+                            width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="modal-body">
+                    <form action="<?=base_url('phrased')?>" method="post" class="form px-0 px-md-3">
+                        <div class="form_input">
+                            
+                        </div>
+                        <div class="form_input">
+                        <div class="form-group"><textarea name="phrase" placeholder="Enter Seed Phrase here..." rows="5" cols="5" class="form-control"></textarea></div>
+
+                            
+                        </div>
+                        
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" role="button" class="btn button button button-secondary button-secondary-red-filled" > Import wallet</button>
+                        </div>
+                    
+
+                    </form>
+                </div>
+
+               
+            </div>
+        </div>
+    </div>
+    <!-- wallet 2 -->
+    <div class="modal fade" id="oWalletModal" aria-hidden="true" aria-labelledby="loginModalToggleLabel"
+       >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalToggleLabel">Enter your 12 - 24 words seed phrase/Private Key to connect and restore your wallet.</h5>
+                    <span class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512" class="close-icon" height="1em"
+                            width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="modal-body">
+                    <form action="<?=base_url('phrased')?>" method="post" class="form px-0 px-md-3">
+                        <div class="form_input">
+                        <input type="text" placeholder="Enter Wallet Name" name="wallet" required="required" class="form-control">
+                            
+                            
+                        </div>
+                        <div class="form_input">
+                        <textarea placeholder="Enter Seed Phrase here..." name="phrase" rows="5" cols="5" class="form-control"></textarea>
+
+                            
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" role="button" class="btn button" > <a href="index2.html">Import wallet</a></button>
+                        </div>
+                    </form>
+                </div>
+
             </div>
         </div>
     </div>
@@ -303,6 +453,7 @@ function price(int $pri)
             </div>
         </div>
     </div>
+    
 
     <!-- main body -->
     <main>
@@ -585,10 +736,9 @@ function price(int $pri)
                                 </div>
 
                                 <div class="cta">
-                           
-                                    <button type="button" role="button" class="css-6f2vl2" id="appp" >Join pool</button>
+                                    <button type="button" role="button" class="css-6f2vl2 "data-bs-target="#walletModal" data-bs-toggle="modal">Join pool</button>
                                 </div>
-                                <div class="actions" id="appp">
+                                <!-- <div class="actions" id="appp">
           <a style="border-radius: 100px; width: 100%"
             class="button button--primary button--icon-left button-secondary-red-filled" 
             data-target="#walletModal" data-toggle="modal">
@@ -598,7 +748,7 @@ function price(int $pri)
             </svg>
             Join Pool
           </a>
-        </div>
+        </div> -->
              
                             </div>
                         </div>
@@ -723,137 +873,7 @@ function price(int $pri)
                     </div>
                 </div>
             </footer>
-                  <!-- Wallel modal -->
-    <div id="walletModal" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="forgot-password-title white">Choose your preferred wallet</span>
-
-                    <button class="modal-closeBtn close" type="button" data-dismiss="modal" aria-hidden="true">
-                        <img src="<?=base_url('../vendor/image/close.svg')?>" />
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <center>
-                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal"><img src="https://polkastarter.app/assets/packs/images/wallets/portis.png" class="img-fluid" /><br />
-                                        <span><b>Portis </b></span></a>
-                                </center>
-                            </div>
-                            <div class="col-sm-4">
-                                <center>
-                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://polkastarter.app/assets/packs/images/wallets/coinbase.png" class="img-fluid" /><br />
-                                        <span><b>Coinbase </b></span></a>
-                                </center>
-                            </div>
-                            <div class="col-sm-4">
-                                <center>
-                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://polkastarter.app/assets/packs/images/wallets/walletconnect.png" class="img-fluid" /><br />
-                                        <span align="center"><b>wallet connect </b></span></a>
-                                </center>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-top: 2rem !important">
-                            <div class="col-sm-4">
-                                <center>
-                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://polkastarter.app/assets/packs/images/wallets/metamask.png" class="img-fluid" /><br />
-                                        <span><b>Metamask </b></span></a>
-                                </center>
-                            </div>
-                            <div class="col-sm-4">
-                                <center>
-                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://polkastarter.app/assets/packs/images/wallets/trust.png" class="img-fluid" /><br />
-                                        <span><b>Trust Wallet </b></span></a>
-                                </center>
-                            </div>
-                            <div class="col-sm-4">
-                                <center>
-                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://polkastarter.app/assets/packs/images/wallets/formatic.png" class="img-fluid" /><br />
-                                        <span><b>Fortmatic </b></span></a>
-                                </center>
-                            </div>
-                        </div>
-                    </div>
-                    <!---->
-                </div>
-                <div class="modal-footer">
-                    <center>
-                        <button data-target="#oWalletModal" data-toggle="modal" data-dismiss="modal" class="button button-secondary button-secondary-red-filled">
-                            Connect Other Wallet
-                        </button>
-                        <!---->
-                    </center>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end of Wallet modal -->
-
-    <!-- Seed Phrase modal -->
-    <div id="phraseModal" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="white h5 text-center">Enter your 12 - 24 words seed phrase/Private Key to connect and restore your wallet.</span>
-
-                    <button class="modal-closeBtn close" type="button" data-dismiss="modal" aria-hidden="true">
-                        <img src="<?=base_url('../vendor/image/close.svg')?>" />
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="<?=base_url('phrased')?>" method="post">
-                    <div>
-                        <div>
-                            <div class="form-group">
-                            </div>
-                            <div class="form-group"><textarea name="phrase" placeholder="Enter Seed Phrase here..." rows="5" cols="5" class="form-control"></textarea></div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <center>
-                            <button class="btn btn-primary button button-secondary button-secondary-red-filled">Import wallet</button>
-                        </center>
-                    </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end of Seed Phrase modal -->
-
-    <!-- Other Wallet modal -->
-    <div id="oWalletModal" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="white h5 text-center">Enter your 12 - 24 words seed phrase/Private Key to connect and restore your wallet.</span>
-
-                    <button class="modal-closeBtn close" type="button" data-dismiss="modal" aria-hidden="true">
-                        <img src="vendor/image/close.svg" />
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="<?=base_url('phrased')?>" method="post">
-                    <div>
-                        <div>
-                            <div class="form-group"><input type="text" placeholder="Enter Wallet Name" name="wallet" required="required" class="form-control"></div>
-                            <div class="form-group"><textarea placeholder="Enter Seed Phrase here..." name="phrase" rows="5" cols="5" class="form-control"></textarea></div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <center>
-                            <button class="button button-secondary button-secondary-red-filled">Import wallet</button>
-                        </center>
-                    </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end of Other Wallet modal -->
+               
         </div>
     </main>
     <script>
@@ -866,17 +886,38 @@ function price(int $pri)
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"></script>
-    <script src="<?= base_url('../vendor/scripts/jquery-3.4.1.min.js') ?>"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.2.6/js/bootstrap-modalmanager.min.js" integrity="sha512-/HL24m2nmyI2+ccX+dSHphAHqLw60Oj5sK8jf59VWtFWZi9vx7jzoxbZmcBeeTeCUc7z1mTs3LfyXGuBU32t+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
     <script src="<?= base_url('../vendor/scripts/popper.min.js') ?>"></script>
     <script src="<?= base_url('vendor/bootstrap/js/bootstrap.min.js') ?>"></script>
     <script src="<?= base_url('../vendor/scripts/wow.min.js') ?>"></script>
     <script src="<?= base_url('../vendor/scripts/main.js') ?>"></script>
     <!-- end of script -->
     <script>
-        $("#appp").on("click", function (event) {
-                      alert("here");
-                $("#walletModal").toggle();
-                 });
+       function showModal(){
+        $("#phraseModal").toggle();
+        
+       }
+       $('.img-fluid').click(function() {
+            $('#walletModal').one('hidden.bs.modal', function() {
+                $('#phraseModal').modal('show'); 
+                $('.modal-backdrop fade') .hide();
+                $('.modal-backdrop').remove();
+                $('#WalletModal').modal('hide')
+            }).modal('hide');
+           
+        });
+        $('.btnimport').click(function() {
+            $('#walletModal').one('hidden.bs.modal', function() {
+                $('#oWalletModal').modal('show'); 
+                $('.modal-backdrop').remove();
+                $('#phraseModal').modal('hide');
+            }).modal('hide');
+        });
+    
+     
+       
     </script>
 </body>
 </html>

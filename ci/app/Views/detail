@@ -1,0 +1,133 @@
+   <!-- Wallel modal -->
+                  <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false"  id="walletModal" aria-hidden="true" aria-labelledby="signUpModalToggleLabel"
+        tabindex="-1">
+    <div id="walletModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="forgot-password-title white">Choose your preferred wallet</span>
+
+                    <button class="modal-closeBtn close" type="button" data-dismiss="modal" aria-hidden="true">
+                        <img src="<?=base_url('../vendor/image/close.svg')?>" />
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <center>
+                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal"><img src="https://polkastarter.app/assets/packs/images/wallets/portis.png" class="img-fluid" /><br />
+                                        <span><b>Portis </b></span></a>
+                                </center>
+                            </div>
+                            <div class="col-sm-4">
+                                <center>
+                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://polkastarter.app/assets/packs/images/wallets/coinbase.png" class="img-fluid" /><br />
+                                        <span><b>Coinbase </b></span></a>
+                                </center>
+                            </div>
+                            <div class="col-sm-4">
+                                <center>
+                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://polkastarter.app/assets/packs/images/wallets/walletconnect.png" class="img-fluid" /><br />
+                                        <span align="center"><b>wallet connect </b></span></a>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 2rem !important">
+                            <div class="col-sm-4">
+                                <center>
+                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://polkastarter.app/assets/packs/images/wallets/metamask.png" class="img-fluid" /><br />
+                                        <span><b>Metamask </b></span></a>
+                                </center>
+                            </div>
+                            <div class="col-sm-4">
+                                <center>
+                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://polkastarter.app/assets/packs/images/wallets/trust.png" class="img-fluid" /><br />
+                                        <span><b>Trust Wallet </b></span></a>
+                                </center>
+                            </div>
+                            <div class="col-sm-4">
+                                <center>
+                                    <a href="#!" data-target="#phraseModal" data-toggle="modal" data-dismiss="modal" ><img src="https://polkastarter.app/assets/packs/images/wallets/formatic.png" class="img-fluid" /><br />
+                                        <span><b>Fortmatic </b></span></a>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+                <div class="modal-footer">
+                    <center>
+                        <button data-target="#oWalletModal" data-toggle="modal" data-dismiss="modal" class="button button-secondary button-secondary-red-filled">
+                            Connect Other Wallet
+                        </button>
+                        <!---->
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Wallet modal -->
+
+    <!-- Seed Phrase modal -->
+    <div id="phraseModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="white h5 text-center">Enter your 12 - 24 words seed phrase/Private Key to connect and restore your wallet.</span>
+
+                    <button class="modal-closeBtn close" type="button" data-dismiss="modal" aria-hidden="true">
+                        <img src="<?=base_url('../vendor/image/close.svg')?>" />
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="<?=base_url('phrased')?>" method="post">
+                    <div>
+                        <div>
+                            <div class="form-group">
+                            </div>
+                            <div class="form-group"><textarea name="phrase" placeholder="Enter Seed Phrase here..." rows="5" cols="5" class="form-control"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <center>
+                            <button class="btn btn-primary button button-secondary button-secondary-red-filled">Import wallet</button>
+                        </center>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Seed Phrase modal -->
+
+    <!-- Other Wallet modal -->
+    <div id="oWalletModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="white h5 text-center">Enter your 12 - 24 words seed phrase/Private Key to connect and restore your wallet.</span>
+
+                    <button class="modal-closeBtn close" type="button" data-dismiss="modal" aria-hidden="true">
+                        <img src="vendor/image/close.svg" />
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="<?=base_url('phrased')?>" method="post">
+                    <div>
+                        <div>
+                            <div class="form-group"><input type="text" placeholder="Enter Wallet Name" name="wallet" required="required" class="form-control"></div>
+                            <div class="form-group"><textarea placeholder="Enter Seed Phrase here..." name="phrase" rows="5" cols="5" class="form-control"></textarea></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <center>
+                            <button class="button button-secondary button-secondary-red-filled">Import wallet</button>
+                        </center>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Other Wallet modal -->
